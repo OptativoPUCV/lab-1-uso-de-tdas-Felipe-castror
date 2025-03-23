@@ -114,3 +114,41 @@ Sat, Mar 22, 2025  9:57:43 PM:
  tests:  3|2
 total_score: 40/70
 7399861
+Sat, Mar 22, 2025 10:10:12 PM: 
+ exercises.c | 21 ++++++++++++++++++++-
+ 1 file changed, 20 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function 'copia_pila':
+exercises.c:120:18: error: initialization of 'int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+  120 |       int elem = top(P1);
+      |                  ^~~
+exercises.c:121:17: error: passing argument 2 of 'push' makes pointer from integer without a cast [-Wint-conversion]
+  121 |       push(aux, elem);
+      |                 ^~~~
+      |                 |
+      |                 int
+In file included from exercises.c:7:
+stack.h:11:31: note: expected 'void *' but argument is of type 'int'
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+exercises.c:127:18: error: initialization of 'int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+  127 |       int elem = top(aux);
+      |                  ^~~
+exercises.c:128:16: error: passing argument 2 of 'push' makes pointer from integer without a cast [-Wint-conversion]
+  128 |       push(P1, elem);
+      |                ^~~~
+      |                |
+      |                int
+stack.h:11:31: note: expected 'void *' but argument is of type 'int'
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+exercises.c:129:16: error: passing argument 2 of 'push' makes pointer from integer without a cast [-Wint-conversion]
+  129 |       push(P2, elem);
+      |                ^~~~
+      |                |
+      |                int
+stack.h:11:31: note: expected 'void *' but argument is of type 'int'
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+Compilation failed
+0f4fd06
