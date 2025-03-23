@@ -215,3 +215,29 @@ Sat, Mar 22, 2025 10:24:11 PM:
  tests:  4|1
 total_score: 50/70
 c79d58d
+Sat, Mar 22, 2025 11:18:49 PM: 
+ exercises.c | 34 +++++++++++++++++++++++++++++++++-
+ 1 file changed, 33 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:155:18: error: passing argument 2 of 'push' makes pointer from integer without a cast [-Wint-conversion]
+  155 |          push(L ,prueba );
+      |                  ^~~~~~
+      |                  |
+      |                  char
+In file included from exercises.c:7:
+stack.h:11:31: note: expected 'void *' but argument is of type 'char'
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+exercises.c:168:18: error: comparison between pointer and integer [-Werror]
+  168 |       if ( (temp == '(' && ultimo == ')') || (temp == '{' && ultimo == '}') || (temp == '[' && ultimo == ']') )
+      |                  ^~
+exercises.c:168:52: error: comparison between pointer and integer [-Werror]
+  168 |       if ( (temp == '(' && ultimo == ')') || (temp == '{' && ultimo == '}') || (temp == '[' && ultimo == ']') )
+      |                                                    ^~
+exercises.c:168:86: error: comparison between pointer and integer [-Werror]
+  168 |       if ( (temp == '(' && ultimo == ')') || (temp == '{' && ultimo == '}') || (temp == '[' && ultimo == ']') )
+      |                                                                                      ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+dd6ce55
