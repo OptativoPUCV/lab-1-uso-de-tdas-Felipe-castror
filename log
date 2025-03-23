@@ -346,3 +346,29 @@ exercises.c:166:11: error: cast to pointer from integer of different size [-Werr
 cc1.exe: all warnings being treated as errors
 Compilation failed
 255c520
+Sat, Mar 22, 2025 11:25:52 PM: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:168:18: error: comparison between pointer and integer [-Werror]
+  168 |       if ( (temp == '(' && ultimo == ')') || (temp == '{' && ultimo == '}') || (temp == '[' && ultimo == ']') )
+      |                  ^~
+exercises.c:168:35: error: comparison between pointer and integer [-Werror]
+  168 |       if ( (temp == '(' && ultimo == ')') || (temp == '{' && ultimo == '}') || (temp == '[' && ultimo == ']') )
+      |                                   ^~
+exercises.c:168:52: error: comparison between pointer and integer [-Werror]
+  168 |       if ( (temp == '(' && ultimo == ')') || (temp == '{' && ultimo == '}') || (temp == '[' && ultimo == ']') )
+      |                                                    ^~
+exercises.c:168:69: error: comparison between pointer and integer [-Werror]
+  168 |       if ( (temp == '(' && ultimo == ')') || (temp == '{' && ultimo == '}') || (temp == '[' && ultimo == ']') )
+      |                                                                     ^~
+exercises.c:168:86: error: comparison between pointer and integer [-Werror]
+  168 |       if ( (temp == '(' && ultimo == ')') || (temp == '{' && ultimo == '}') || (temp == '[' && ultimo == ']') )
+      |                                                                                      ^~
+exercises.c:168:103: error: comparison between pointer and integer [-Werror]
+  168 |       if ( (temp == '(' && ultimo == ')') || (temp == '{' && ultimo == '}') || (temp == '[' && ultimo == ']') )
+      |                                                                                                       ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+9b7a22f
