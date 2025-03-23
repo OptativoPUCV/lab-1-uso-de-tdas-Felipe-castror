@@ -190,3 +190,16 @@ stack.h:11:31: note: expected 'void *' but argument is of type 'int'
       |                         ~~~~~~^~~~
 Compilation failed
 d9c9fb6
+Sat, Mar 22, 2025 10:15:41 PM: 
+ exercises.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'copia_pila':
+exercises.c:121:19: error: initialization of 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  121 |       int *elem = *ptr;
+      |                   ^
+exercises.c:129:19: error: initialization of 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  129 |       int *elem = *ptr;
+      |                   ^
+Compilation failed
+7cbaed3
