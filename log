@@ -326,3 +326,23 @@ exercises.c:168:103: error: comparison between pointer and integer [-Werror]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 4e77fe2
+Sat, Mar 22, 2025 11:24:04 PM: 
+ exercises.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:155:18: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+  155 |          push(L ,(void*)prueba );
+      |                  ^
+exercises.c:161:16: error: cast from pointer to integer of different size [-Werror=pointer-to-int-cast]
+  161 |    char temp = (char) first(L);
+      |                ^
+exercises.c:164:19: error: cast from pointer to integer of different size [-Werror=pointer-to-int-cast]
+  164 |    char  ultimo = (char)popFront(L);
+      |                   ^
+exercises.c:166:11: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+  166 |    while ((void*)temp != NULL)
+      |           ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+255c520

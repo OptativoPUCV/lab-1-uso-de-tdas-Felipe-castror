@@ -148,22 +148,22 @@ int parentesisBalanceados(char *cadena)
    return 0;
    for(int i = 0; cadena[i] != '\0'; i++)
    {
-      void *prueba = (void*)cadena[i];
+      char prueba = cadena[i];
 
       if ( (prueba == '(') || (prueba == '{') || (prueba == '[') )
       {
-         push(L ,prueba );
+         push(L ,(void*)prueba );
          contador ++;
       }
       else if ( (prueba == ')') || (prueba == ']') || (prueba == '}'))return 0;
    }
 
-   char *temp = (char *) first(L);
+   char temp = (char) first(L);
 
 
-   void* ultimo = (void*)popFront(L);
+   char  ultimo = (char)popFront(L);
 
-   while (temp != NULL)
+   while ((void*)temp != NULL)
    {
       if ( (temp == '(' && ultimo == ')') || (temp == '{' && ultimo == '}') || (temp == '[' && ultimo == ']') )
       {
