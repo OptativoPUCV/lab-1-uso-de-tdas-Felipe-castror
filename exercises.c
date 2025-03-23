@@ -144,7 +144,6 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 int parentesisBalanceados(char *cadena)
 {
    List* L = create_list();
-   size_t contador = 0;
    return 0;
    for(int i = 0; cadena[i] != '\0'; i++)
    {
@@ -153,7 +152,6 @@ int parentesisBalanceados(char *cadena)
       if ( (prueba == '(') || (prueba == '{') || (prueba == '[') )
       {
          push(L ,(void*)&prueba );
-         contador ++;
       }
       else if ( (prueba == ')') || (prueba == ']') || (prueba == '}'))
       {
@@ -171,9 +169,8 @@ int parentesisBalanceados(char *cadena)
 
    while (first(L) != NULL)
    {
-      if ( (*temp == '(' && *ultimo == ')') || (*temp == '{' && *ultimo == '}') || (*temp == '[' && *ultimo == ']') )
+      if ( ((char*) first(L) == '(' && (char*)popFront(L) == ')') || ((char*) first(L) == '{' && (char*)popFront(L) == '}') || ((char*) first(L) == '[' && (char*)popFront(L) == ']') )
       {
-         contador -= 1;
          popFront(L);
       }
 
@@ -181,4 +178,3 @@ int parentesisBalanceados(char *cadena)
 
    return 1;
 }
-
