@@ -167,7 +167,7 @@ int parentesisBalanceados(char *cadena)
 
    while (first(L) != NULL)
    {
-      if ( ( (char*) first(L) == '(' && *ultimo == ')' ) || ( (char*) first(L) == '{' && *ultimo == '}' ) || ( *ultimo == '[' && (char*)popFront(L) == ']') )
+      if ( ( *(char*) first(L) == '(' && *ultimo == ')' ) || ( *(char*) first(L) == '{' && *ultimo == '}' ) || (*(char*) first(L) == '[' && *ultimo == ']') )
       {
          popFront(L);
       }
