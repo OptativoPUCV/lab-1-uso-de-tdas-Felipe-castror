@@ -165,7 +165,7 @@ int parentesisBalanceados(char *cadena)
 
    while (temp != NULL)
    {
-      if ( (temp == '(' && ultimo == ')') || (temp == '{' && ultimo == '}') || (temp == '[' && ultimo == ']') )
+      if ( (*temp == '(' && *ultimo == ')') || (*temp == '{' && *ultimo == '}') || (*temp == '[' && *ultimo == ']') )
       {
          contador -= 1;
          popFront(L);
