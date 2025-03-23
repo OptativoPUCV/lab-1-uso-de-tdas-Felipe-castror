@@ -148,7 +148,7 @@ int parentesisBalanceados(char *cadena)
    return 0;
    for(int i = 0; cadena[i] != '\0'; i++)
    {
-      void *prueba = cadena[i];
+      void *prueba = (void*)cadena[i];
 
       if ( (prueba == '(') || (prueba == '{') || (prueba == '[') )
       {
@@ -161,7 +161,7 @@ int parentesisBalanceados(char *cadena)
    char *temp = (char *) first(L);
 
 
-   char ultimo = (char)(intptr_t)popFront(L);
+   void* ultimo = (void*)popFront(L);
 
    while (temp != NULL)
    {

@@ -279,3 +279,50 @@ exercises.c:168:86: error: comparison between pointer and integer [-Werror]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 a721f9a
+Sat, Mar 22, 2025 11:21:18 PM: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:151:22: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+  151 |       void *prueba = (void*)cadena[i];
+      |                      ^
+exercises.c:153:20: error: comparison between pointer and integer [-Werror]
+  153 |       if ( (prueba == '(') || (prueba == '{') || (prueba == '[') )
+      |                    ^~
+exercises.c:153:39: error: comparison between pointer and integer [-Werror]
+  153 |       if ( (prueba == '(') || (prueba == '{') || (prueba == '[') )
+      |                                       ^~
+exercises.c:153:58: error: comparison between pointer and integer [-Werror]
+  153 |       if ( (prueba == '(') || (prueba == '{') || (prueba == '[') )
+      |                                                          ^~
+exercises.c:158:25: error: comparison between pointer and integer [-Werror]
+  158 |       else if ( (prueba == ')') || (prueba == ']') || (prueba == '}'))return 0;
+      |                         ^~
+exercises.c:158:44: error: comparison between pointer and integer [-Werror]
+  158 |       else if ( (prueba == ')') || (prueba == ']') || (prueba == '}'))return 0;
+      |                                            ^~
+exercises.c:158:63: error: comparison between pointer and integer [-Werror]
+  158 |       else if ( (prueba == ')') || (prueba == ']') || (prueba == '}'))return 0;
+      |                                                               ^~
+exercises.c:168:18: error: comparison between pointer and integer [-Werror]
+  168 |       if ( (temp == '(' && ultimo == ')') || (temp == '{' && ultimo == '}') || (temp == '[' && ultimo == ']') )
+      |                  ^~
+exercises.c:168:35: error: comparison between pointer and integer [-Werror]
+  168 |       if ( (temp == '(' && ultimo == ')') || (temp == '{' && ultimo == '}') || (temp == '[' && ultimo == ']') )
+      |                                   ^~
+exercises.c:168:52: error: comparison between pointer and integer [-Werror]
+  168 |       if ( (temp == '(' && ultimo == ')') || (temp == '{' && ultimo == '}') || (temp == '[' && ultimo == ']') )
+      |                                                    ^~
+exercises.c:168:69: error: comparison between pointer and integer [-Werror]
+  168 |       if ( (temp == '(' && ultimo == ')') || (temp == '{' && ultimo == '}') || (temp == '[' && ultimo == ']') )
+      |                                                                     ^~
+exercises.c:168:86: error: comparison between pointer and integer [-Werror]
+  168 |       if ( (temp == '(' && ultimo == ')') || (temp == '{' && ultimo == '}') || (temp == '[' && ultimo == ']') )
+      |                                                                                      ^~
+exercises.c:168:103: error: comparison between pointer and integer [-Werror]
+  168 |       if ( (temp == '(' && ultimo == ')') || (temp == '{' && ultimo == '}') || (temp == '[' && ultimo == ']') )
+      |                                                                                                       ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+4e77fe2
