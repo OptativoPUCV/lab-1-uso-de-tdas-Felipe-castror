@@ -6,7 +6,7 @@
 #include "arraylist.h"
 #include "stack.h"
 
-//#include "exercises.h"
+#include "exercises.h"
 
 //Funciones auxiliares que puedes utilizar para debuggear tus ejercicios
 //NO MODIFICAR
@@ -43,16 +43,36 @@ Al finalizar retorna la lista creada.
 
 List* crea_lista() {
    List* L = create_list();
+   for (int i = 0; i <= 10 ; i++)
+   {
+      int* num = malloc(sizeof(int));
+
+      *num = i;
+
+      pushback(l, num);
+   }
    return L;
 }
+
 
 /*
 Ejercicio 2.
 Crea una función que reciba una lista de enteros (int*) y 
 retorne la suma de sus elementos.
 */
-int sumaLista(List *L) {
-   return 0;
+int sumaLista(List *L) 
+{
+   int sumat = 0;
+
+   int *num = (int*)first(L);
+
+   while(num != NULL)
+   {
+      sumat += *num;
+      num = (int*)next(L);
+
+   }
+   return sumat;
 }
 
 /*
@@ -64,7 +84,23 @@ Asume que popCurrent luego de eliminar un elemento se
 posiciona en el elemento anterior.
 */
 
-void eliminaElementos(List*L, int elem){
+void eliminaElementos(List*L, int elem)
+{
+   int *temp = (int *) first(L);
+
+   while (temp != NULL)
+   {
+      if (*actual == elem)
+      {
+         popCurrent(L);
+         temp = (int*)next(L);
+
+      }
+
+      else temp = (int*)next(L);
+
+
+   }
 
 }
 

@@ -1,0 +1,10 @@
+Sat, Mar 22, 2025  9:37:29 PM: 
+ exercises.c | 43 +++++++++++++++++++++++++++++++++++++++----
+ 1 file changed, 39 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c:9:10: fatal error: exercises.h: No such file or directory
+    9 | #include "exercises.h"
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+Compilation failed
+3f6cb15
