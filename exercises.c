@@ -115,20 +115,17 @@ void copia_pila(Stack* P1, Stack* P2)
 {
    Stack* aux = create_stack();
 
+
    while (top(P1) != NULL)
    {
-      int *ptr = (int*)top(P1);
-      int *elem=malloc(sizeof(int));
-       *elem = *ptr;
+      void *elem = top(P1);
       push(aux, elem);
       pop(P1);
    }
 
    while (top(aux) != NULL)
    {
-      int *ptr = (int*)top(aux);
-      int *elem = malloc(sizeof(int));
-      *elem = *ptr;
+      void *elem = top(aux);
       push(P1, elem);
       push(P2, elem);
       pop(aux);
