@@ -908,3 +908,9 @@ exercises.c:172:10: error: implicit declaration of function 'popcurrent'; did yo
       |          popCurrent
 Compilation failed
 60eb189
+Sat, Mar 22, 2025 11:48:59 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|1
+total_score: 50/70
+8149e22

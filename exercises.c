@@ -169,7 +169,7 @@ int parentesisBalanceados(char *cadena)
    {
       if ( ( *(char*) first(L) == '(' && *ultimo == ')' ) || ( *(char*) first(L) == '{' && *ultimo == '}' ) || ( *(char*) first(L) == '[' && *(char*)popFront(L) == ']') )
       {
-         popcurrent(L);
+         popCurrent(L);
       }
 
    }
