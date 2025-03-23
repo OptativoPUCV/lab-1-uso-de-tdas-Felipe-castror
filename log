@@ -8,3 +8,11 @@ exercises.c:9:10: fatal error: exercises.h: No such file or directory
 compilation terminated.
 Compilation failed
 3f6cb15
+Sat, Mar 22, 2025  9:37:47 PM: 
+In file included from test.c:5:
+exercises.c:9:10: fatal error: exercises.h: No such file or directory
+    9 | #include "exercises.h"
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+Compilation failed
+779f12f
