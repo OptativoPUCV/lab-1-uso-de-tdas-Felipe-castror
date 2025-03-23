@@ -148,7 +148,7 @@ int parentesisBalanceados(char *cadena)
    return 0;
    for(int i = 0; cadena[i] != '\0'; i++)
    {
-      char prueba = cadena[i];
+      void *prueba = cadena[i];
 
       if ( (prueba == '(') || (prueba == '{') || (prueba == '[') )
       {
