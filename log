@@ -203,3 +203,9 @@ exercises.c:129:19: error: initialization of 'int *' from 'int' makes pointer fr
       |                   ^
 Compilation failed
 7cbaed3
+Sat, Mar 22, 2025 10:18:21 PM: 
+ exercises.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+ tests:  3|2
+total_score: 40/70
+cf6ba13
