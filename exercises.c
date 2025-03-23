@@ -49,7 +49,7 @@ List* crea_lista() {
 
       *num = i;
 
-      pushback(l, num);
+      pushBack(L, num);
    }
    return L;
 }
@@ -90,7 +90,7 @@ void eliminaElementos(List*L, int elem)
 
    while (temp != NULL)
    {
-      if (*actual == elem)
+      if (*temp == elem)
       {
          popCurrent(L);
          temp = (int*)next(L);

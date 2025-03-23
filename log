@@ -108,3 +108,9 @@ exercises.c:93:12: error: 'actual' undeclared (first use in this function)
       |            ^~~~~~
 Compilation failed
 96f2fcf
+Sat, Mar 22, 2025  9:57:43 PM: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  3|2
+total_score: 40/70
+7399861
