@@ -155,7 +155,11 @@ int parentesisBalanceados(char *cadena)
          push(L ,(void*)&prueba );
          contador ++;
       }
-      else if ( (prueba == ')') || (prueba == ']') || (prueba == '}'))return 0;
+      else if ( (prueba == ')') || (prueba == ']') || (prueba == '}'))
+      {
+         if (get_size(L) == 0) {
+         return 0;
+      }
    }
 
    char* temp = (char*) first(L);
