@@ -117,14 +117,14 @@ void copia_pila(Stack* P1, Stack* P2)
 
    while (top(P1) != NULL)
    {
-      int elem = top(P1);
+      int elem = (int*)top(P1);
       push(aux, elem);
       pop(P1);
    }
 
    while (top(aux) != NULL)
    {
-      int elem = top(aux);
+      int elem = (int*)top(aux);
       push(P1, elem);
       push(P2, elem);
       pop(aux);
