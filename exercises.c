@@ -165,10 +165,14 @@ int parentesisBalanceados(char *cadena)
    char* ultimo = (char*)popFront(L);
 
 
-   if (( *(char*)first(L) == ')' && *ultimo != '(') || (*(char*)first(L) == '}' && *ultimo != '{') || (*(char*)first(L) == ']' && *ultimo != '['))
-         {
-            return 0;  // No coinciden, el balance no es correcto
-         }
+   while (first(L) != NULL)
+   {
+      if ( ( *(char*) first(L) == '(' && *ultimo == ')' ) || ( *(char*) first(L) == '{' && *ultimo == '}' ) || ( *(char*) first(L) == '[' && *(char*)popFront(L) == ']') )
+      {
+         popcurrent(L);
+      }
+
+   }
 
    return 1;
 }

@@ -897,3 +897,14 @@ Sat, Mar 22, 2025 11:42:59 PM:
  tests:  4|1
 total_score: 50/70
 349523a
+Sat, Mar 22, 2025 11:48:47 PM: 
+ exercises.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:172:10: error: implicit declaration of function 'popcurrent'; did you mean 'popCurrent'? [-Wimplicit-function-declaration]
+  172 |          popcurrent(L);
+      |          ^~~~~~~~~~
+      |          popCurrent
+Compilation failed
+60eb189
