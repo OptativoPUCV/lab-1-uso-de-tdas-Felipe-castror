@@ -162,10 +162,6 @@ int parentesisBalanceados(char *cadena)
       }
    }
 
-   char* temp = (char*) first(L);
-
-
-   char*  ultimo = (char*)popFront(L);
 
    while (first(L) != NULL)
    {

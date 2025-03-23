@@ -842,3 +842,29 @@ exercises.c:165:10: error: unused variable 'temp' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 871437c
+Sat, Mar 22, 2025 11:36:28 PM: 
+ exercises.c | 4 ----
+ 1 file changed, 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:168:30: error: comparison between pointer and integer [-Werror]
+  168 |       if ( ((char*) first(L) == '(' && (char*)popFront(L) == ')') || ((char*) first(L) == '{' && (char*)popFront(L) == '}') || ((char*) first(L) == '[' && (char*)popFront(L) == ']') )
+      |                              ^~
+exercises.c:168:59: error: comparison between pointer and integer [-Werror]
+  168 |       if ( ((char*) first(L) == '(' && (char*)popFront(L) == ')') || ((char*) first(L) == '{' && (char*)popFront(L) == '}') || ((char*) first(L) == '[' && (char*)popFront(L) == ']') )
+      |                                                           ^~
+exercises.c:168:88: error: comparison between pointer and integer [-Werror]
+  168 |       if ( ((char*) first(L) == '(' && (char*)popFront(L) == ')') || ((char*) first(L) == '{' && (char*)popFront(L) == '}') || ((char*) first(L) == '[' && (char*)popFront(L) == ']') )
+      |                                                                                        ^~
+exercises.c:168:117: error: comparison between pointer and integer [-Werror]
+  168 |       if ( ((char*) first(L) == '(' && (char*)popFront(L) == ')') || ((char*) first(L) == '{' && (char*)popFront(L) == '}') || ((char*) first(L) == '[' && (char*)popFront(L) == ']') )
+      |                                                                                                                     ^~
+exercises.c:168:146: error: comparison between pointer and integer [-Werror]
+  168 |       if ( ((char*) first(L) == '(' && (char*)popFront(L) == ')') || ((char*) first(L) == '{' && (char*)popFront(L) == '}') || ((char*) first(L) == '[' && (char*)popFront(L) == ']') )
+      |                                                                                                                                                  ^~
+exercises.c:168:175: error: comparison between pointer and integer [-Werror]
+  168 |       if ( ((char*) first(L) == '(' && (char*)popFront(L) == ')') || ((char*) first(L) == '{' && (char*)popFront(L) == '}') || ((char*) first(L) == '[' && (char*)popFront(L) == ']') )
+      |                                                                                                                                                                               ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+ab57634
