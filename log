@@ -57,3 +57,20 @@ exercises.c:93:12: error: 'actual' undeclared (first use in this function)
       |            ^~~~~~
 Compilation failed
 376e2fd
+Sat, Mar 22, 2025  9:50:38 PM: 
+In file included from test.c:5:
+exercises.c: In function 'crea_lista':
+exercises.c:52:7: error: implicit declaration of function 'pushback'; did you mean 'pushBack'? [-Wimplicit-function-declaration]
+   52 |       pushback(l, num);
+      |       ^~~~~~~~
+      |       pushBack
+exercises.c:52:16: error: 'l' undeclared (first use in this function)
+   52 |       pushback(l, num);
+      |                ^
+exercises.c:52:16: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c: In function 'eliminaElementos':
+exercises.c:93:12: error: 'actual' undeclared (first use in this function)
+   93 |       if (*actual == elem)
+      |            ^~~~~~
+Compilation failed
+5224c89
