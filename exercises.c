@@ -157,8 +157,10 @@ int parentesisBalanceados(char *cadena)
       }
       else if ( (prueba == ')') || (prueba == ']') || (prueba == '}'))
       {
-         if (get_size(L) == 0) {
-         return 0;
+         if (get_size(L) == 0) 
+         {
+            return 0;
+         }
       }
    }
 
