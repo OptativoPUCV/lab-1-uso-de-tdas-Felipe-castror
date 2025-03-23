@@ -868,3 +868,20 @@ exercises.c:168:175: error: comparison between pointer and integer [-Werror]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 ab57634
+Sat, Mar 22, 2025 11:38:36 PM: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:170:31: error: comparison between pointer and integer [-Werror]
+  170 |       if ( ( (char*) first(L) == '(' && *ultimo == ')' ) || ( (char*) first(L) == '{' && *ultimo == '}' ) || ( *ultimo == '[' && (char*)popFront(L) == ']') )
+      |                               ^~
+exercises.c:170:80: error: comparison between pointer and integer [-Werror]
+  170 |       if ( ( (char*) first(L) == '(' && *ultimo == ')' ) || ( (char*) first(L) == '{' && *ultimo == '}' ) || ( *ultimo == '[' && (char*)popFront(L) == ']') )
+      |                                                                                ^~
+exercises.c:170:149: error: comparison between pointer and integer [-Werror]
+  170 |       if ( ( (char*) first(L) == '(' && *ultimo == ')' ) || ( (char*) first(L) == '{' && *ultimo == '}' ) || ( *ultimo == '[' && (char*)popFront(L) == ']') )
+      |                                                                                                                                                     ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+6411166

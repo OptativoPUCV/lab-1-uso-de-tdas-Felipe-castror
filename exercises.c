@@ -162,10 +162,12 @@ int parentesisBalanceados(char *cadena)
       }
    }
 
+   char* ultimo = (char*)popFront(L);
+
 
    while (first(L) != NULL)
    {
-      if ( ((char*) first(L) == '(' && (char*)popFront(L) == ')') || ((char*) first(L) == '{' && (char*)popFront(L) == '}') || ((char*) first(L) == '[' && (char*)popFront(L) == ']') )
+      if ( ( (char*) first(L) == '(' && *ultimo == ')' ) || ( (char*) first(L) == '{' && *ultimo == '}' ) || ( *ultimo == '[' && (char*)popFront(L) == ']') )
       {
          popFront(L);
       }
